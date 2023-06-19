@@ -1,0 +1,78 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+// loading page
+.outerdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+   .loading {
+      width: 200px;
+      height: 200px;
+      display: inline-block;
+      overflow: hidden;
+      background-color: #0D1212;
+      .loadingAnimation {
+         width: 100%;
+         height: 100%;
+         position: relative;
+         transform: translateZ(0) scale(1);
+         backface-visibility: hidden;
+         transform-origin: 0 0;
+         div{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #d1ffff;
+            box-sizing: content-box;
+            animation: loadingAnimation 1s linear infinite;
+             @keyframes loadingAnimation {
+                0% { background-color: #00ffff }
+                12.5% { background-color: #00ffff }
+                12.625% { background-color: #d1ffff }
+                100% { background-color: #d1ffff }
+            }
+         }
+         .innerdiv0{left:60px;top:60px;animation-delay:0s}
+         .innerdiv1{left:90px;top:60px;animation-delay:0.125s}
+         .innerdiv2{left:120px;top:60px;animation-delay:0.25s}
+         .innerdiv3{left:60px;top:90px;animation-delay:0.875s}
+         .innerdiv4{left:120px;top:90px;animation-delay:0.375s}
+         .innerdiv5{left:60px;top:120px;animation-delay:0.75s}
+         .innerdiv6{left:90px;top:120px;animation-delay:0.625s}
+         .innerdiv7{left:120px;top:120px;animation-delay:0.5s}
+      }
+    }
+}
+
+// not-found page
+.notFound{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+
+    div{
+        h2{
+            color: #00ffff;
+        }
+        p{
+            a{
+                color: RGB(5, 99, 193);
+            }
+        }
+    }
+}

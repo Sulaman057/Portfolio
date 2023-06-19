@@ -1,0 +1,30 @@
+.aboutSec{
+    width: 58rem;
+    height: auto;
+    margin: 3.5rem 0;
+    .about{
+        margin: 0;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
+}
+@media (max-width: 1658px){
+    .aboutSec{
+        width: 50rem;
+    }
+}
+@media ( max-width: 1000px){
+    .aboutSec{
+        width: 40rem;
+    }
+}
+@media (max-width: 900px){
+    .aboutSec{
+        width: 25rem;
+    }
+}
+@media (max-width: 425px){
+    .aboutSec{
+        width: 18.75rem;
+    }
+}

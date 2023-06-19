@@ -1,0 +1,75 @@
+.pcards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    .pcard{
+        width: 16rem;
+        height: 25rem;
+        transition: transform 0.3s ease;
+        &:hover{
+            transform: scale(1.05);
+        }
+
+        background-size: cover;
+        .pcardcontent{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 16rem;
+            height: 25rem;
+            background: rgba(0, 43, 43, 0.8);
+            text-align: center;
+            padding: 20px;
+
+            .divider{
+                width: 200px;
+                height: 0px;
+                border: 1px solid var(--primary-color);
+            }
+        }
+    }
+    .pcard1{
+        background-image: url(/imgs/viiees.jpg)
+    }
+    .pcard2{
+        background-image: url(/imgs/portfolio.jpg)
+    }
+    .pcard3{
+        
+    }
+}
+
+@media (max-width: 1488px){
+    .pcards{
+        .pcard{
+            width: 22rem;
+            .pcardcontent{
+                width: 22rem;
+            }
+        }
+    }
+}
+@media (max-width: 375px){
+    .pcards{
+        .pcard{
+            width: 19rem;
+            .pcardcontent{
+                width: 19rem;
+            }
+        }
+    }
+}
+@media (max-width: 320px){
+    .pcards{
+        .pcard{
+            width: 18rem;
+            .pcardcontent{
+                width: 18rem;
+            }
+        }
+    }
+}

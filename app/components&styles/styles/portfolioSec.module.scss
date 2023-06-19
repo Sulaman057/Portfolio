@@ -1,0 +1,120 @@
+.psec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.7rem;
+    height: auto;
+    margin: 3.5rem 0;
+    h2{
+        color: var(--primary-color);
+    }
+    .pcards{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 58rem;
+        .pcard{
+            width: 18rem;
+            height: 18.5rem;
+            transition: transform 0.3s ease;
+            &:hover{
+                transform: scale(1.05);
+            }
+
+            background-size: cover;
+            .pcardcontent{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                width: 18rem;
+                height: 18.5rem;
+                background: rgba(0, 43, 43, 0.8);
+                text-align: center;
+                padding: 20px;
+
+                .divider{
+                    width: 200px;
+                    height: 0px;
+                    border: 1px solid var(--primary-color);
+                }
+            }
+        }
+        .pcard1{
+            background-image: url(/imgs/viiees.jpg)
+        }
+        .pcard2{
+            background-image: url(/imgs/portfolio.jpg)
+        }
+        // .pcard3{
+        //     background-image: url(/imgs/viiees.jpg)
+        // }
+    }
+}
+
+@media (max-width: 1658px){
+    .psec{
+        .pcards{
+            width: 50rem;
+            .pcard{
+                width: 16rem;
+                .pcardcontent{
+                    width: 16rem;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1000px){
+    .psec{
+        .pcards{
+            width: 40rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            .pcard{
+                width: 19.5rem;
+                .pcardcontent{
+                    width: 19.5rem;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 900px){
+    .psec{
+        .pcards{
+            width: 25rem;
+            flex-direction: column;
+            gap: 1rem;
+            .pcard{
+                width: 25rem;
+                .pcardcontent{
+                    width: 25rem;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 425px){
+    .psec{
+        .pcards{
+            width: 18.75rem;
+            flex-direction: column;
+            gap: 1rem;
+            .pcard{
+                width: 18.75rem;
+                .pcardcontent{
+                    width: 18.75rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+

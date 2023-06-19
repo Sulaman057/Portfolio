@@ -1,0 +1,95 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    width: 58rem;
+    margin: 3.5rem 0;
+    .logoDec{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 210px;
+        height: 130px;
+    }
+    .cfLinks{
+        h3{
+            font-family: impact;
+            font-size: 32px;
+            font-weight: 400;
+            padding-bottom: 20px;
+        }
+        .cLinks{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px 48px;
+            .link{
+                a{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    p{
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 25px;
+                        padding-left: 16px;
+                        color: var(--primary-color);
+                    }
+                    .ficon{
+                        font-size: 32px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1658px){
+    .footer{
+        width: 50rem;
+    }
+}
+@media (max-width: 1000px){
+    .footer{
+        flex-direction: column;
+        gap: 3.5rem;
+        width: 40rem;
+        .logoDec{
+            align-items: center;
+            justify-content: center;
+            width: 300px;
+            p{
+                padding-top: 20px;
+            }
+        }
+        .cfLinks{
+            text-align: center;
+            h3{
+                padding-bottom: 30px;
+
+            }
+        }
+    }
+}
+@media (max-width: 900px){
+    .footer{
+        width: 25rem;
+        .logoDec{
+            align-items: center;
+            justify-content: center;
+            width: 300px;
+            p{
+                padding-top: 20px;
+            }
+        }
+        .cfLinks{
+            text-align: center;
+            .cLinks{
+                display: flex;
+                flex-direction: column;
+
+            }
+        }
+    }
+}
