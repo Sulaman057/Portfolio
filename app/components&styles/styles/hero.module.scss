@@ -73,8 +73,51 @@
 @media (max-width: 425px){
     .heroSec{
         .intro{
+            width: 23.125rem;
+        }
+        img{
+            width: 23.125rem;
+            height: 23.125rem;
+        }
+    }
+}
+@media (max-width: 390px){
+    .heroSec{
+        .intro{
+            width: 21.875rem;
+        }
+        img{
+            width: 21.875rem;
+            height: 21.875rem;
+        }
+    }
+}
+@media (max-width: 365px){
+    .heroSec{
+        .intro{
+            width: 20.625rem;
+        }
+        img{
+            width: 20.625rem;
+            height: 20.625rem;
+        }
+    }
+}
+@media (max-width: 345px){
+    .heroSec{
+        .intro{
+            width: 20rem;
+        }
+        img{
+            width: 20rem;
+            height: 20rem;
+        }
+    }
+}
+@media (max-width: 330px){
+    .heroSec{
+        .intro{
             width: 18.75rem;
-
         }
         img{
             width: 18.75rem;

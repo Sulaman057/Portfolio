@@ -137,12 +137,42 @@
     .header{
         width: auto;
         .forMob{
-            gap: 8.2rem;
+            gap: 12.5rem;
         }
         nav{
             button{
                 left: 78vw;
             }
+        }
+    }
+}
+
+@media (max-width: 390px){
+    .header{
+        .forMob{
+            gap: 11.227rem;
+        }
+    }
+}
+
+@media (max-width: 365px){
+    .header{
+        .forMob{
+            gap: 9.98rem;
+        }
+    }
+}
+@media (max-width: 345px){
+    .header{
+        .forMob{
+            gap: 9.4rem;
+        }
+    }
+}
+@media (max-width: 330px){
+    .header{
+        .forMob{
+            gap: 8.2rem;
         }
     }
 }

@@ -1,5 +1,5 @@
 .outerdiv{
-    margin: 4rem auto auto 20vw;
+    margin: 4rem auto 4rem 20vw;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -90,7 +90,6 @@
     .outerdiv{
         margin-left: 4vw;
         flex-direction: column-reverse;
-        
         gap: 1rem;
         .innerdiv{
             width: 85vw;
