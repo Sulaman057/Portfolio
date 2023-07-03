@@ -1,4 +1,5 @@
 "use client"
+import PagesNav from "../components&styles/components/PagesNav";
 import styles1 from "@/app/pagestheme.module.scss"
 import styles from "./contact.module.scss"
 import { useState } from "react";
@@ -20,7 +21,7 @@ const Contact =  () => {
     return (
       <>
       <div className={styles1.outerdiv}>
-        <Link href="/" className={styles1.btnlink}><BiArrowBack className={styles1.backArrow} /></Link>
+        <PagesNav />
         <div className={styles1.innerdiv}>
           <h2>Thank you!</h2>
           <p>I'll be in touch soon.</p>
@@ -32,7 +33,7 @@ const Contact =  () => {
 
   return (
       <div className={styles1.outerdiv}>
-        <Link href="/" className={styles1.btnlink}><BiArrowBack className={styles1.backArrow} /></Link>
+        <PagesNav />
         <div className={styles1.innerdiv}>
           <h2>Contact</h2>
           <p>You can leave your message here.</p>

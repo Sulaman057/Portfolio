@@ -1,11 +1,18 @@
 import styles from "@/app/pagestheme.module.scss"
-import { BiArrowBack } from 'react-icons/bi';
-import Link from "next/link";
+import PagesNav from "../components&styles/components/PagesNav";
+
+
+
 export default async function getServerSideProps() {
   await new Promise((resolve) => setTimeout(resolve, 2000));
   return (
       <div className={styles.outerdiv}>
-        <Link href="/" className={styles.btnlink}><BiArrowBack className={styles.backArrow} /></Link>
+        <div className={styles.pagesNav} >
+          <PagesNav />
+        </div>
+          
+
+
         <div className={styles.innerdiv}>
           <h2>About Me</h2>
           <p>Hey, I am Sulaman a <b>frontend developer</b>. Based in Lahore, Pakistan</p>

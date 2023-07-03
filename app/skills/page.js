@@ -1,3 +1,4 @@
+import PagesNav from "../components&styles/components/PagesNav";
 import styles from "@/app/pagestheme.module.scss"
 import styles1 from "./skills.module.scss"
 import { SiHtml5, SiFigma, SiRedux, SiAxios, SiVite, SiStyledcomponents, SiNextdotjs, SiCss3, SiSass, SiJavascript, SiReact } from 'react-icons/si';
@@ -8,7 +9,7 @@ export default async function getServerSideProps() {
   await new Promise((resolve) => setTimeout(resolve, 2000));
   return (
       <div className={styles.outerdiv}>
-        <Link href="/" className={styles.btnlink}><BiArrowBack className={styles.backArrow} /></Link>
+        <PagesNav />
         <div className={styles.innerdiv}>
           <h2>Skill Set</h2>
           <p>I am constantly staying updated with the latest developments in frontend technologies and best practices. I have a strong understanding of responsive design principles and cross-browser compatibility to ensure that websites are accessible and efficient.</p>
