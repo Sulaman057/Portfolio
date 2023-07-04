@@ -20,16 +20,16 @@ const PortfolioSec = () => {
                <h3>Current site</h3>
                <p>Nextjs & SCSS</p>
                <div className={styles.divider}/>
-               <p>This project, I have created for myself by using Nextjs and sass/scss for styling</p>
+               <p>That's the current project, I created this to showcase my portfolio by using Nextjs and sass/scss for styling</p>
                <Link href="/projects/current"><button>See more</button></Link>
             </div>
          </div>
          <div className={[styles.pcard3, styles.pcard].join(" ")}>
             <div className={styles.pcardcontent}>
                <h3>Form validation</h3>
-               <p>Nextjs, Tailwind CSS & MUI  </p>
+               <p>Nextjs, Tailwind, formik & yup</p>
                <div className={styles.divider}/>
-               <p>Motive of this project is to practice form validations. I'll use nextjs and mui in this porject</p>
+               <p>Motive of this project is to practice form validations. In this project i've use formik and yup </p>
                <Link href="/projects/form-validation"><button>See more</button></Link>
             </div>
          </div>
